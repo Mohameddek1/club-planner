@@ -1,0 +1,76 @@
+/* Overall container styling */
+.event-container {
+    padding: 20px;
+    background-color: #f4f4f9;  /* Light background for the whole page */
+    min-height: 100vh;
+  }
+  
+  /* Heading styling */
+  h2 {
+    text-align: center;
+    color: #333;  /* Dark grey color for the heading */
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the events list container */
+  .events-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Styling for individual event cards */
+  .event-card {
+    border: 1px solid #ddd;  /* Light border */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow around the cards */
+    background-color: #fff;  /* White background for each card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth hover transition */
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);  /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Darker shadow on hover */
+  }
+  
+  /* Styling for the title of each event */
+  .event-card h3 {
+    color: #2c3e50;  /* Dark color for the title */
+    margin-top: 0;
+  }
+  
+  /* Styling for paragraph text */
+  .event-card p {
+    color: #555;  /* Medium grey color for general text */
+    margin: 5px 0;
+  }
+  
+  /* Styling for strong text (e.g., labels like 'Date', 'Time', etc.) */
+  .event-card strong {
+    color: #34495e;  /* Dark blue-grey color for the labels */
+  }
+  
+  /* Add a background color to speakers section */
+  .event-card .speakers {
+    background-color: #ecf0f1;  /* Light grey background for speaker names */
+    padding: 5px;
+    border-radius: 4px;
+    font-style: italic;
+  }
+  
+  /* Button styling for the event cards (optional, if you have buttons) */
+  .event-card button {
+    background-color: #2980b9;  /* Blue background for buttons */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .event-card button:hover {
+    background-color: #3498db;  /* Lighter blue on hover */
+  }
+  
